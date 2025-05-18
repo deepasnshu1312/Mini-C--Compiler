@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>MiniC++ Compiler</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>MiniC++ Compiler</h1>
+
+        <div class="section">
+            <label for="code">Code Editor:</label>
+            <textarea id="code" placeholder="Write your C++ like code here..."></textarea>
+        </div>
+
+        <div class="section">
+            <label for="userInput">cin Input (space-separated):</label>
+            <input type="text" id="userInput" placeholder="e.g., 10 20" />
+        </div>
+
+        <div class="section">
+            <button onclick="compileAndRun()">Compile & Run</button>
+        </div>
+
+        <div class="section">
+            <label for="output">Output:</label>
+            <pre id="output"></pre>
+        </div>
+    </div>
+
+    <script src="compiler.js"></script>
+</body>
+</html>
